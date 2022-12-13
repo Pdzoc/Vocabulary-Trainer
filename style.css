@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+body {
+  background: #BD8F4D;
+  color: #191919;
+  font-family: "Lato", sans-serif;
+}
+body button {
+  font-family: "Lato", sans-serif;
+  font-size: 17px;
+  border: 2px solid #191919;
+  padding: 2px 9px;
+  background: none;
+  color: #191919;
+  font-weight: bold;
+  cursor: pointer;
+}
+body button:hover {
+  border: 2px solid gold;
+}
+body button:focus {
+  border: 2px solid gold;
+}
+body label {
+  margin-left: 20px;
+  cursor: pointer;
+  border: 2px solid #191919;
+  padding: 2px 9px;
+  font-weight: bold;
+}
+body label:hover {
+  border: 2px solid gold;
+}
+body input[type=file] {
+  display: none;
+}
+body #points {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
+main {
+  margin: auto;
+  position: relative;
+  font-size: large;
+  border: 8px double #191919;
+  border-radius: 10px;
+}
+main .info-box {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+.row input {
+  width: 75%;
+  font-size: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 3px dotted #191919;
+  caret-color: #191919;
+  color: #191919;
+  font-family: "Lato", sans-serif;
+}
+
+article {
+  border-bottom: 2px dashed #191919;
+}
+
+.panel {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+#res {
+  width: 40px;
+  height: 40px;
+  border: 3px solid #191919;
+  border-radius: 50px;
+}
+
+nav {
+  width: 65%;
+  margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    width: 100%;
+  }
+  nav {
+    width: 90%;
+  }
+  button {
+    min-width: 25px;
+    font-weight: 600;
+    margin: 1px;
+    padding: 7px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 800px) {
+  main {
+    width: 80%;
+  }
+  button {
+    min-width: 25px;
+  }
+}
+@media screen and (min-width: 801px) {
+  main {
+    width: 50%;
+  }
+  nav {
+    width: 65%;
+  }
+}/*# sourceMappingURL=style.css.map */
