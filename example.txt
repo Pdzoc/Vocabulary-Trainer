@@ -1,0 +1,11 @@
+mathematics - matematyka
+number - liczba
+point - punkt
+square - kwadrat
+rectangle - prostokąt
+triangle - trójkąt
+circle - okrąg
+addition - dodawanie
+subtraction - odejmowanie
+multiplication - mnożenie
+division - dzielenie
