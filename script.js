@@ -12,6 +12,17 @@ let sorted;
 let points = 0;
 let reverseMode = false;
 
+let aside = document.querySelector('aside');
+aside.addEventListener('click', revMode);
+
+function revMode() {
+    reverseMode = !reverseMode;
+    if(reverseMode) {
+        aside.style.background = 'green'
+    }
+    else {aside.style.background = ''}
+}
+
 document.getElementById('inputfile').addEventListener('change', function() {
     points = 0;
     pointsField.innerText = 'Score: '+points;
