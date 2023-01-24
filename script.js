@@ -10,6 +10,7 @@ let tip = document.querySelector('#tip');
 let loadedData;
 let sorted;
 let points = 0;
+let reverseMode = false;
 
 document.getElementById('inputfile').addEventListener('change', function() {
     points = 0;
@@ -41,7 +42,7 @@ function check() {
     }
     else {
         let ans = getUserVal();
-        if(ans==sorted[counter].split(" - ")[1]) {
+        if((ans == reverseMode? sorted[counter].split(" - ")[0] : sorted[counter].split(" - ")[1])) {
             if(counter < sorted.length) ++counter;
             if(counter==sorted.length) {
                 sorted = sorted.sort((a,b) => 0.5 - Math.random())
@@ -66,8 +67,7 @@ function next() {
     infoBox.innerText = "";
     resField.style.background = "";
     if(!loadedData) {infoBox.innerText = "First load file"; return;}
-    let q = sorted[counter].split(" - ")[0];
-    let ans = sorted[counter].split(" - ")[1];
+    let q = reverseMode? sorted[counter].split(" - ")[1] : sorted[counter].split(" - ")[0];
     display(q);
 }
 
