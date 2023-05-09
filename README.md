@@ -12,3 +12,5 @@ word - translation
 word - translation
 [...]
 ```
+
+You can use [Word List](https://github.com/Pdzoc/Word-list) to prepare your file.
