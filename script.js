@@ -53,7 +53,7 @@ function check() {
     }
     else {
         let ans = getUserVal();
-        if((ans == reverseMode? sorted[counter].split(" - ")[0] : sorted[counter].split(" - ")[1])) {
+        if((ans == (reverseMode? sorted[counter].split(" - ")[0] : sorted[counter].split(" - ")[1]))) {
             if(counter < sorted.length) ++counter;
             if(counter==sorted.length) {
                 sorted = sorted.sort((a,b) => 0.5 - Math.random())
